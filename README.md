@@ -1,3 +1,114 @@
+🌐 HomelyHub – Hotel Booking Website (Frontend)
+
+This is the frontend of the HomelyHub Hotel Booking Platform, built using React + Vite.
+The UI enables users to browse hotels, view room details, book accommodations, and manage their booking experience seamlessly.
+
+🚀 Features
+🏨 User Features
+
+Browse available hotels and rooms
+
+View detailed hotel information
+
+Search and filter options
+
+Login & Register
+
+Book a room and view booking status
+
+Responsive UI for mobile and desktop
+
+🛠️ Tech Stack
+
+React JS
+
+Vite
+
+JavaScript (ES6+)
+
+Axios for API calls
+
+React Router DOM
+
+CSS 
+
+
+📁 Project Structure
+frontend/
+
+├── public/
+
+├── src/
+
+│   ├── components/
+
+│   ├── pages/
+
+│   ├── hooks/
+
+│   ├── context/
+
+│   ├── utils/
+
+│   └── App.jsx
+
+├── .gitignore
+
+├── index.html
+
+├── package.json
+
+├── vite.config.js
+
+└── README.md
+
+⚙️ Installation & Setup
+
+Follow the steps below to run the frontend locally:
+
+1. Clone the repository
+git clone https://github.com/Anusha-P-N/hotel-booking-frontend.git
+
+2. Navigate into the project
+cd hotel-booking-frontend
+
+3. Install dependencies
+npm install
+
+4. Start development server
+npm run dev
+
+🔗 API Connection
+
+The project uses Vite proxy for local backend communication:
+
+// vite.config.js
+
+server: {
+
+  proxy: {
+  
+    '/api': {
+    
+      target: 'http://localhost:8000',
+      
+      changeOrigin: true,
+      
+      secure: false,
+      
+    }
+  }
+}
+
+
+Make sure your backend is running on port 8000.
+
+📦 Build for Production
+
+To build the frontend:
+
+npm run build
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
